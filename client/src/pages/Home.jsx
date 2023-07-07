@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Loader, card, formfield } from '../components';
+import { Loader, FormField } from '../components';
 
 
-const Home = () => {
+export const Home = () => {
 
   
   const [loading, setLoading] = useState(true);
@@ -17,7 +17,7 @@ const Home = () => {
       </div>
 
       <div className="mt-16">
-        <formfield/>
+        <FormField/>
       </div>
 
       <div className='mt-10'>
@@ -25,15 +25,9 @@ const Home = () => {
           <div className="flex justify-centre items-centre">
             <Loader/>
           </div>
-        ):(
-          <>
-
-          </>
-        )}
+        ):null}
       </div>
 
     </section>
   )
 }
-
-export default home

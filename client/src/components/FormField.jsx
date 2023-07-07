@@ -1,9 +1,7 @@
 import React from 'react'
 
-const formfield = () => {
+export const FormField = () => {
   return (
     <div>formfield</div>
   )
 }
-
-export default formfield
